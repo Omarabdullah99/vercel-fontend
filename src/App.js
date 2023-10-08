@@ -5,11 +5,17 @@ import {useDispatch} from 'react-redux'
 import { useEffect } from 'react';
 import { setUser } from './features/auth/authSlice';
 import Homepage from './pages/Hompage';
+import Deployment from './pages/Deployment';
 
 const router= createBrowserRouter([
   {
     path:"/",
     element:<Homepage></Homepage>
+
+  },
+  {
+    path:"/deploy",
+    element:<Deployment></Deployment>
 
   },
   {
